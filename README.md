@@ -147,5 +147,6 @@ The `options` argument is a Lua table holding the following keys:
 See Also
 ========
 * the [lua-struct](https://github.com/iryont/lua-struct) library
+* the [AgoraIO](https://github.com/AgoraIO/Tools) library
 
 [Back to TOC](#table-of-contents)
