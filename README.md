@@ -63,8 +63,8 @@ Synopsis
 ```
 
 Methods
-
 =======
+
 new
 ---
 `syntax: token = access_token.new(options)`
