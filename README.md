@@ -63,8 +63,8 @@ Synopsis
 ```
 
 Methods
-
 =======
+
 new
 ---
 `syntax: token = access_token.new(options)`
@@ -142,8 +142,6 @@ The `options` argument is a Lua table holding the following keys:
 [Back to TOC](#table-of-contents)
 
 
-
-[Back to TOC](#table-of-contents)
 See Also
 ========
 * the [lua-struct](https://github.com/iryont/lua-struct) library
