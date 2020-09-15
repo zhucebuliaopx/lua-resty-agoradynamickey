@@ -19,11 +19,3 @@ end
 _M.generate_signaling_token = generate_signaling_token
 
 return _M
-
---[[
-    account = "10000"
-    appID = "970CA35de60c44645bbae8a215061b33"
-    appCertificate = "5CFd2fd1755d40ecb72977518be15d3b"
-    expiredTsInSeconds = 1446455471 
-    1:970CA35de60c44645bbae8a215061b33:1446455471:92697ea82aa794d40d4940250280022b
-]]
