@@ -9,6 +9,7 @@ luac.out
 
 # logs
 logs
+**.log
 
 # luarocks build files
 *.src.rock

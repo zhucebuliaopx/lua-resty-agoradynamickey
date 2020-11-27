@@ -118,10 +118,14 @@ function struct.unpack(format, stream, pos)
   local vars = {}
   local iterator = pos or 1
   local endianness = true
+  -- ngx.log(ngx.ERR, "format------>", format)
+  -- ngx.log(ngx.ERR, "stream-->", stream)
+  -- ngx.log(ngx.ERR, "#stream-->", #stream)
 
   for i = 1, format:len() do
+    -- ngx.log(ngx.ERR, "iterator------>", iterator)
     local opt = format:sub(i, i)
-
+    -- ngx.log(ngx.ERR, "opt----->", opt)
     if opt == '<' then
       endianness = true
     elseif opt == '>' then
@@ -131,8 +135,10 @@ function struct.unpack(format, stream, pos)
       local signed = opt:lower() == opt
 
       local val = 0
+      -- ngx.log(ngx.ERR, "n------->", n)
       for j = 1, n do
         local byte = string.byte(stream:sub(iterator, iterator))
+        -- ngx.log(ngx.ERR, "byte------>", byte)
         if endianness then
           val = val + byte * (2 ^ ((j - 1) * 8))
         else
@@ -175,7 +181,7 @@ function struct.unpack(format, stream, pos)
     elseif opt == 's' then
       local bytes = {}
       for j = iterator, stream:len() do
-        if stream:sub(j) == '' then
+        if stream:sub(j, j) == string.char(0) then
           break
         end
 

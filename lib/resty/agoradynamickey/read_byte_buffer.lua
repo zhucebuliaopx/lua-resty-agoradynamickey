@@ -38,7 +38,7 @@ end
 local function  unpack_string(self)
     local str_len = self:unpack_uint16()
     local buff = sub(self.buffer, self.position, self.position+str_len-1)
-    local ret = struct.unpack('<'..str_len..'s', buff)
+    local ret = struct.unpack('<c'..str_len, buff)
     self.position = self.position + str_len
     return ret
 end
