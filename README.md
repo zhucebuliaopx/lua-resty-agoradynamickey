@@ -6,7 +6,7 @@ lua-resty-agoradynamickey: an optional lua resty lib AgoraDynamicKey
 Installation
 ============
 
-Just place `agoradynamickey` directory somewhere in your package.path, under resty directory. If you are using OpenResty, the default location would be /usr/local/openresty/lualib/resty.
+Just place `agoradynamickey` directory somewhere in your package.path, under resty directory. 
 
 depend
 ------
@@ -25,6 +25,7 @@ Table of Contents
   - [depend](#depend)
 - [Table of Contents](#table-of-contents)
 - [Synopsis](#synopsis)
+- [Methods](#methods)
   - [new](#new)
   - [rtc_token_builder](#rtc_token_builder)
   - [rtm_token_builder](#rtm_token_builder)
